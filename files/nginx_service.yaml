@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
-namespace: teste
 metadata:
   annotations:
     service.beta.kubernetes.io/aws-load-balancer-internal: 0.0.0.0/0
   labels:
     app: nginx
   name: nginx
+namespace: teste
 spec:
   ports:
   - name: http
